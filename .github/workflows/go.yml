@@ -23,3 +23,9 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+      
+    - name: capture build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: Artifacts
+        path: ./
